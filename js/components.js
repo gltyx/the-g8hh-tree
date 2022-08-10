@@ -623,6 +623,7 @@ function loadVue() {
 			formatSmall,
 			focused,
 			getThemeName,
+			getLanguageName,
 			layerunlocked,
 			doReset,
 			buyUpg,
