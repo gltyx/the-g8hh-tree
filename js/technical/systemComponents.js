@@ -152,7 +152,7 @@ var systemComponents = {
         template: `
         <table>
             <tr>
-                <td><button class="opt" onclick="save()">Save</button></td>
+                <td><button class="opt" onclick="save()" data-lang="save">Save</button></td>
                 <td><button class="opt" onclick="toggleOpt('autosave')">Autosave: {{ options.autosave?"ON":"OFF" }}</button></td>
                 <td><button class="opt" onclick="hardReset()">HARD RESET</button></td>
             </tr>
@@ -172,7 +172,7 @@ var systemComponents = {
 				<td><button class="opt" onclick="toggleOpt('forceTooltips'); needsCanvasUpdate = true">Shift-Click to Toggle Tooltips: {{ options.forceTooltips?"ON":"OFF" }}</button></td>
 				</tr> 
 				<tr>
-					<td><button class="opt" onclick="switchLanguage()">切换语言:<br/> {{ getLanguageName() }}</button></td>
+					<td><button class="opt" onclick="switchLanguage()"><span data-lang="language">Language</span>:<br/> {{ getLanguageName() }}</button></td>
 					</tr> 
         </table>`
     },

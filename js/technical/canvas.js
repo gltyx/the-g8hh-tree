@@ -23,6 +23,7 @@ function resizeCanvas() {
 
 
 var colors_theme
+var i18n_language
 
 function drawTree() {
 	if (!retrieveCanvasData()) return;

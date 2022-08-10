@@ -1,5 +1,5 @@
 let modInfo = {
-	name: "The G8hh Tree",
+	name: $.i18n.map['title'],
 	id: "g8hh",
 	author: "nobody",
 	pointsName: "points",

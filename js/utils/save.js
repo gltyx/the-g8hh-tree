@@ -208,7 +208,6 @@ function load() {
 	changeTreeQuality();
 	updateLayers();
 	setupModInfo();
-
 	setupTemp();
 	updateTemp();
 	updateTemp();
@@ -218,11 +217,13 @@ function load() {
 
 function loadOptions() {
 	let get2 = localStorage.getItem(modInfo.id+"_options");
+	
 	if (get2) 
 		options = Object.assign(getStartOptions(), JSON.parse(decodeURIComponent(escape(atob(get2)))));
 	else 
 		options = getStartOptions()
 	if (themes.indexOf(options.theme) < 0) theme = "default"
+	// if (languages.indexOf(options.language) < 0) language = "zh"
 	fixData(options, getStartOptions())
 
 }
