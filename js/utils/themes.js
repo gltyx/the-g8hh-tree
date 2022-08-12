@@ -1,5 +1,5 @@
 // ************ Themes ************
-var themes = ["default", "aqua"]
+var themes = ["default", "aqua", "moyu"]
 
 var colors = {
 	default: {
@@ -22,9 +22,20 @@ var colors = {
 		background: "#001f3f",
 		background_tooltip: "rgba(0, 15, 31, 0.75)",
 	},
+	moyu: {
+		1: "#ffffff",
+		2: "#ffffff",
+		3: "#ffffff",
+		color: "#ffffff",
+		points: "#ffffff",
+		locked: "#c4a7b3",
+		background: "#001f3f",
+		background_tooltip: "rgba(0, 15, 31, 0.75)",
+	}
 }
 function changeTheme() {
 
+	console.log(options.theme)
 	colors_theme = colors[options.theme || "default"];
 	document.body.style.setProperty('--background', colors_theme["background"]);
 	document.body.style.setProperty('--background_tooltip', colors_theme["background_tooltip"]);
